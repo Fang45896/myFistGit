@@ -26,3 +26,19 @@ git add XXX(加入追蹤) > git commit -m "更新檔案說明"
  // 若檔案已經在 repository 內，則使用以下指令
  // repository 與 stage 的檔案都會被還原到 HEAD，但 working directory 內的檔案不變
  $ git reset HARD
+
+若有檔案修改，記得要再 add 修改的檔案（這是新手比較容易忘記的部分），若是要放棄修改可以使用 git checkout -- 檔案名稱
+
+ // 比較現在檔案和上次 commit 之間的差異，也就是說你做了哪些修改
+ $ git diff
+ // 查看目前工作狀態
+ $ git status
+ Changes not staged for commit:
+ (use "git add <file>..." to update what will be committed)
+ (use "git checkout -- <file>..." to discard changes in working directory)
+
+     modified:   hello.py
+
+commit 這個修改時簡寫會寫成這樣（-a 是 add，-m 為 message 簡寫，後面接訊息資訊）：
+
+ $ git commit -a -m "修改了 hello.py"

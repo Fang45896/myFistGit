@@ -1,0 +1,19 @@
+git --version
+git config --global user.name "<Your Name>"
+git config --global user.email "<your@gmail.com>"
+git config --list
+git config --global core.editor "'編輯器path' -multiInst -nosession"
+git help config
+
+ // 建立一個 hello-git 資料夾
+ $ mkdir hello-git
+ // 移動到 hello-git 資料夾
+ $ cd hello-git
+ // 將專案資料夾建立成 git repository
+ $ git init
+ // 列出專案資料夾下的檔案和資料夾（-l 參數為列出詳細資料，-a 為列出隱藏資料夾）
+ $ ls -la(dir)
+
+git status
+
+git add XXX > git commit -m "更新檔案說明"

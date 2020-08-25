@@ -19,3 +19,10 @@ repository 檔案庫
 git status
 
 git add XXX(加入追蹤) > git commit -m "更新檔案說明"
+
+ // 檔案尚未加入過追蹤時使用，即可恢復到檔案尚未加入暫存區
+ $ git rm --cached hello.py
+
+ // 若檔案已經在 repository 內，則使用以下指令
+ // repository 與 stage 的檔案都會被還原到 HEAD，但 working directory 內的檔案不變
+ $ git reset HARD

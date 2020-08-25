@@ -42,3 +42,5 @@ git add XXX(加入追蹤) > git commit -m "更新檔案說明"
 commit 這個修改時簡寫會寫成這樣（-a 是 add，-m 為 message 簡寫，後面接訊息資訊）：
 
  $ git commit -a -m "修改了 hello.py"
+
+git push -u origin master

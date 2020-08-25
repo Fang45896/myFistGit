@@ -5,6 +5,8 @@ git config --list
 git config --global core.editor "'編輯器path' -multiInst -nosession"
 git help config
 
+repository 檔案庫
+
  // 建立一個 hello-git 資料夾
  $ mkdir hello-git
  // 移動到 hello-git 資料夾
@@ -16,4 +18,4 @@ git help config
 
 git status
 
-git add XXX > git commit -m "更新檔案說明"
+git add XXX(加入追蹤) > git commit -m "更新檔案說明"

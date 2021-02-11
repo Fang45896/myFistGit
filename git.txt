@@ -51,7 +51,9 @@ git config --global alias.XX commit 將commit指令(可以換成其他指令)以
 git clone URL 將線上的git複製至本機
 git branch -a 查詢包含線上的分支內容
 git branch XXX remotes/origin/XXX 對應遠端分支
-git remote -v
+git remote -v 觀看遠程分支具體設置
+git push origin dev 將本地庫檔案推上遠端庫
+(github要設定token)
 
 echo "# mygit" >> README.md
 git init

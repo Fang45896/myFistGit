@@ -44,3 +44,19 @@ commit 這個修改時簡寫會寫成這樣（-a 是 add，-m 為 message 簡寫
  $ git commit -a -m "修改了 hello.py"
 
 git push -u origin master
+
+---------------------------------------------------------
+git config --global alias.XX commit 將commit指令(可以換成其他指令)以XX代替
+
+git clone URL 將線上的git複製至本機
+git branch -a 查詢包含線上的分支內容
+git branch XXX remotes/origin/XXX 對應遠端分支
+git remote -v
+
+echo "# mygit" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main 主分支命名為 main
+git remote add origin https://github.com/Fang45896/mygit.git
+git push -u origin main
